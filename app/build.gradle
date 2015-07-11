@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'com.dahtkahm.products.alpha.keystore'
+            keyPassword 'buhbuh'
+            storeFile file('C:/Code/Alpha/android/com.dahtkahm.products.alpha.keystore.jks')
+            storePassword 'buhbuh22'
+        }
+    }
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
-
     defaultConfig {
         applicationId "com.dahtkahm.alphas.test2"
         minSdkVersion 19
@@ -23,6 +30,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.2.0'
 }

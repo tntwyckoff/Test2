@@ -1,5 +1,6 @@
 package com.dahtkahm.alphas.test2;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     int team0Score, team1Score, workingScore;
     int currentRound = 1;
